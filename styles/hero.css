@@ -18,8 +18,9 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* padding-bottom: 1rem; */
   overflow: hidden;
-  margin: 7rem auto;
+  margin: 7rem auto 2rem auto;
 }
 
 .upk-salf-slider-wrapper {
@@ -346,8 +347,8 @@ body {
 
 @media (min-width: 768px) {
   .upk-salf-slider-wrapper {
-    height: 550px;
-    padding: 60px;
+    height: 850px;
+    padding: 10px;
   }
   .upk-salf-slider-wrapper .upk-page-scroll {
     bottom: 4%;
@@ -382,8 +383,8 @@ body {
 }
 @media (min-width: 1024px) {
   .upk-salf-slider-wrapper {
-    height: 650px;
-    padding: 70px;
+    height: 850px;
+    /* padding: 70px; */
   }
   .upk-salf-slider-wrapper .upk-page-scroll {
     bottom: 9%;
@@ -419,9 +420,13 @@ body {
   }
 }
 @media (min-width: 1440px) {
+  .bdt-timeline-container {
+    width: 100%;
+    height: ;
+  }
   .upk-salf-slider-wrapper {
-    height: 700px;
-    padding: 80px;
+    height: 900px;
+    /* padding: 10px; */
   }
   .upk-salf-slider-wrapper .upk-salf-item .upk-salf-title {
     font-size: 55px;

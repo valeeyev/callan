@@ -111,7 +111,7 @@ p {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  overflow: auto;
+  overflow: scroll;
   /* padding-top: 100px; */
   padding: 1rem 50px 1rem 60px;
   scroll-behavior: smooth;
@@ -143,6 +143,9 @@ p {
   /* box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08); */
   transition: all 0.25s ease;
 }
+.btd-scroll-down {
+  display: none;
+}
 
 .btn:hover {
   box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, 0.07);
@@ -173,6 +176,8 @@ p {
   background: #e9ebef;
   /* flex-direction: column; */
   width: 100%;
+  overflow: scroll;
+
   height: 27rem;
   /* overflow: hidden; */
   position: relative;
@@ -209,4 +214,54 @@ p {
     rgba(233, 235, 239, 1) 100%
   );
   /* pointer-event: none; */
+}
+
+@media screen and (max-width: 600px) {
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    overflow: auto;
+    /* padding-top: 100px; */
+    padding: 1rem 50px 1rem 60px;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  .slider_inner {
+    display: block;
+    background: #e9ebef;
+    width: 100%;
+    overflow: scroll;
+    height: 27rem;
+    /* overflow: hidden; */
+    position: relative;
+    scroll-behavior: smooth;
+    height: 50rem;
+  }
+  .btd-scroll-down {
+    position: absolute;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    right: 10px;
+    display: flex;
+    background-color: #e9ebef;
+  }
+  .btd-scroll-down i {
+    color: #ffbf00;
+  }
+  .slider:after {
+    display: none;
+  }
+
+  .slider:before {
+    display: none;
+  }
+  .btn-scroll {
+    display: none;
+  }
 }

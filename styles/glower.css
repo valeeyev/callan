@@ -27,10 +27,11 @@
   justify-content: center;
 }
 .glower a {
-  color: #000000;
   background-color: var(--yellow);
+  color: #000000;
   border-radius: 5px;
   padding: 0.3rem;
+  background-color: var(--yellow);
 }
 
 .glower:before {

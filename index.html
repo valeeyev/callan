@@ -91,13 +91,15 @@
         <a href="#courses">kurslar</a>
         <a href="#teachers">o'qituvchilar</a>
         <div class="glower">
-          <a href="#enroll" class="enroll">o'qishni boshlash</a>
+          <a href="#enroll " style="background-color: #ffbf00" class="enroll"
+            >o'qishni boshlash</a
+          >
         </div>
       </div>
     </div>
 
     <!--hero section-->
-    <div class="hero">
+    <div id="home" class="hero">
       <div class="bdt-timeline-container">
         <div class="upk-salf-slider-wrapper">
           <div class="swiper-container mySwiper2">
@@ -417,9 +419,8 @@
     <!-- hero ends -->
 
     <!-- about us -->
-
     <div class="about">
-      <div class="text_box">
+      <div id="about" class="text_box">
         <p class="info">
           <span>Callan Education</span> Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Facilis fugiat fugit iusto rerum eos deleniti eius?
@@ -434,7 +435,7 @@
       </div>
     </div>
     <!-- about finished -->
-
+    <!-- courses -->
     <div class="cources" id="courses">
       <div class="slider">
         <div class="section_info">
@@ -444,9 +445,6 @@
             consequatur!
           </p>
         </div>
-        <button id="next" class="btn btd-scroll-down">
-          <a href="#down"> <i class="las la-angle-down"></i></a>
-        </button>
 
         <div class="slider_inner">
           <button id="prev" class="btn btn-scroll">
@@ -561,7 +559,8 @@
         </button>
       </div>
     </div>
-
+    <!-- courses finished  -->
+    <!-- teachers  -->
     <div class="teachers" id="teachers">
       <div class="teacher_grid">
         <div class="section_info">
@@ -589,7 +588,7 @@
             <div class="card_img"><img src="images/english.png" alt="" /></div>
             <div class="card_body">
               <h1 class="name">Ism Familya</h1>
-              <h3 class="field">Ingliz tili</h3>
+              <h3 class="field">Rus Tili</h3>
 
               <p class="natija">IELTS: 7.5</p>
               <p class="tajriba">
@@ -602,7 +601,7 @@
             <div class="card_img"><img src="images/english.png" alt="" /></div>
             <div class="card_body">
               <h1 class="name">Ism Familya</h1>
-              <h3 class="field">Ingliz tili</h3>
+              <h3 class="field">Arab Tili</h3>
 
               <p class="natija">IELTS: 7.5</p>
               <p class="tajriba">
@@ -619,7 +618,7 @@
             </div>
             <div class="card_body">
               <h1 class="name">Ism Familya</h1>
-              <h3 class="field">Ingliz tili</h3>
+              <h3 class="field">Xattotlik</h3>
 
               <p class="natija">Tajriba: 2 yildan ortiq</p>
               <p class="tajriba">
@@ -634,7 +633,7 @@
             </div>
             <div class="card_body">
               <h1 class="name">Ism Familya</h1>
-              <h3 class="field">Ingliz tili</h3>
+              <h3 class="field">IT, dasturlash</h3>
 
               <p class="natija">Tajriba: 2 yildan ortiq</p>
               <p class="tajriba">
@@ -644,9 +643,122 @@
             </div>
           </div>
         </div>
+        <button class="more">
+          Batafsil <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
+    <!-- teachers finished -->
+    <!-- enroll -->
+    <div class="form">
+      <div class="form_description">
+        <h1 class="title no-margin">Hoziroq kursga yoziling</h1>
+        <p class="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        </p>
+      </div>
+      <div id="enroll" class="form_input">
+        <div class="flex_box">
+          <div class="flex_item">
+            <p for="name_input">Ism Sharifingiz <span>*</span></p>
+            <input
+              id="fullName"
+              placeholder="Ism Familyani kiriting"
+              type="text"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="flex_item">
+            <p for="usr_date">Tug'ilgan oy/kun/yil <span>*</span></p>
+            <input
+              type="date"
+              required
+              name=""
+              id="dateofBirth"
+              autocomplete="bday"
+            />
+          </div>
+        </div>
+        <div class="flex_box">
+          <div class="flex_item">
+            <p for="usr_number">Telefon raqam <span>*</span></p>
+            <input
+              type="tel"
+              name=""
+              id="telNumber"
+              placeholder="+998"
+              autocomplete="tel-national"
+            />
+          </div>
+          <div class="flex_item">
+            <p for="select">Fanni tanlang <span>*</span></p>
+            <div class="dropdown">
+              <div class="select">
+                <div class="selected placeholder"></div>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li class="dropdown-item" id="frontEnd" value="1">
+                  Front-end(IT)
+                </li>
+                <li class="dropdown-item" id="IELTS" value="2">IELTS</li>
+                <li class="dropdown-item" id="msOffice" value="3">
+                  Microsoft Office
+                </li>
+                <li class="dropdown-item" id="mobiloGraph" value="4">
+                  Mobilografiya
+                </li>
+                <li class="dropdown-item" id="graphicDesign" value="5">
+                  Grafik dizayn
+                </li>
+                <li class="dropdown-item" id="arabTili" value="6">Arab tili</li>
+                <li class="dropdown-item" id="flutter" value="7">
+                  Flutter(IT)
+                </li>
+                <li class="dropdown-item" id="bugalteriya" value="8">
+                  Buxgalteriya
+                </li>
+                <li class="dropdown-item" id="englishLang" value="9">
+                  Ingliz tili
+                </li>
+                <li class="dropdown-item" id="russianLang" value="10">
+                  Rus tili
+                </li>
+                <li class="dropdown-item" id="smm" value="11">SMM</li>
+                <li class="dropdown-item" id="xattot_Lik" value="12">
+                  Xattotlik
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <textarea
+          name=""
+          id="additionals"
+          cols=""
+          rows=""
+          placeholder="Qo'shimcha ma'lumotlar"
+        ></textarea>
+
+        <div class="send">
+          <button class="submit" type="submit" id="submit">Yuborish</button>
+          <button class="erase" type="reset" onclick="resetForm()">
+            O'chirish
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- enroll finished -->
+
+    <!-- footer -->
+    <footer>
+      <div class="informations">
+        <a href="www.callaneducation.uz">www.callaneducation.uz</a>
+      </div>
+    </footer>
+    <!-- footer finished -->
     <script src="js/main.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/cources.js"></script>

@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .bdt-timeline-container {
@@ -20,15 +20,15 @@ body {
   padding-right: 15px;
   /* padding-bottom: 1rem; */
   overflow: hidden;
-  margin: 7rem auto 2rem auto;
+  margin: 6rem auto 2rem auto;
 }
 
 .upk-salf-slider-wrapper {
   display: flex;
   flex-direction: row;
-  background: #eaeaea85;
+  background: #eaeaeab1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  height: 400px;
+  height: 350px;
   padding: 30px;
   position: relative;
   border-radius: 1rem;
@@ -50,7 +50,7 @@ body {
 .upk-salf-slider-wrapper .upk-salf-item .upk-xanc-img {
   display: block;
   width: 100%;
-  height: 800px;
+  height: 750px;
   -o-object-fit: fill;
   object-fit: cover;
   object-position: center;
@@ -425,7 +425,7 @@ body {
     height: ;
   }
   .upk-salf-slider-wrapper {
-    height: 900px;
+    height: 600px;
     /* padding: 10px; */
   }
   .upk-salf-slider-wrapper .upk-salf-item .upk-salf-title {

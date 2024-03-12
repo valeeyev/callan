@@ -278,7 +278,7 @@
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
 }
 .form_description {
   max-width: 40%;

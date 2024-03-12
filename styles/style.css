@@ -161,7 +161,7 @@
   gap: 0.7rem;
   letter-spacing: 1.2px;
   font-size: 1.3rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 .more a {
   text-decoration: none;
@@ -426,6 +426,32 @@ footer {
 footer a {
   text-decoration: none;
 }
+/* partners */
+.partners {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #dedede;
+}
+.partners h1 {
+  background-color: transparent;
+}
+.logo_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7rem;
+}
+.partners_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+}
+.partner_logo img {
+  display: flex;
+  height: 100%;
+}
 
 @media screen and (max-width: 800px) {
   .navbar {
@@ -461,6 +487,7 @@ footer a {
     gap: 2rem;
   }
   .more {
+    width: fit-content;
     font-size: 1rem;
     margin: 0 auto;
   }

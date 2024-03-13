@@ -52,3 +52,12 @@ function resetForm() {
     }
   });
 }
+const marquee = document.querySelector(".marquee-content");
+
+// Reset the marquee when it reaches the end
+marquee.addEventListener("animationiteration", () => {
+  marquee.style.animation = "none";
+  setTimeout(() => {
+    marquee.style.animation = "marquee 20s linear infinite"; // Adjust the duration and timing function as needed
+  }, 0);
+});

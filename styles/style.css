@@ -124,18 +124,22 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-color: #ffbf00;
+  background: #1e2235;
 }
+
 .text_box {
-  color: #000000;
+  color: #fff;
   width: 30%;
   font-family: var(--secondfont);
   /* font-style: italic; */
   z-index: 10;
 }
+.about_info {
+  color: #fff;
+}
 .info {
   text-align: center;
-  color: var(--maincolor);
+  /* color: var(--maincolor); */
   font-size: 1.7rem;
 }
 .text_box span {
@@ -143,16 +147,19 @@
   font-size: 2rem;
   font-weight: 500;
   font-style: normal;
-  color: #000000;
+  color: #ffbf00;
+}
+.about_more {
+  border-bottom: dashed #fff 2px;
 }
 
 .more {
-  color: #000000;
+  /* color: #000000; */
   text-decoration: none;
   padding: 0.5rem;
   display: flex;
   border: none;
-  border-bottom: dashed 2px black;
+  /* border-bottom: dashed 2px black; */
   outline: none;
   background-color: transparent;
   text-transform: capitalize;
@@ -165,7 +172,7 @@
 }
 .more a {
   text-decoration: none;
-  color: #000000;
+  /* color: #000000; */
 }
 .more i.fa-arrow-right {
   transition: transform 0.3s ease;
@@ -212,6 +219,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: transparent;
 }
 .section_info h1 {
   font-family: var(--mainfont);
@@ -228,12 +236,17 @@
 }
 /* teachers */
 .teachers {
-  background: #ffbf00;
+  background: rgb(30, 45, 53);
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 11%,
+    rgba(30, 45, 53, 1) 79%
+  );
 }
 .teachers .section_info,
 .teachers > .slider,
 .teachers > .slider > .slider_inner {
-  background-color: #ffbf00;
+  background-color: transparent;
 }
 
 .teachers > .slider:after {
@@ -436,21 +449,28 @@ footer a {
 .partners h1 {
   background-color: transparent;
 }
-.logo_div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 7rem;
+.marquee-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  overflow: hidden;
 }
-.partners_logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 10rem;
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
 }
-.partner_logo img {
-  display: flex;
-  height: 100%;
+.lsbu,
+.reading,
+.yilogo {
+  height: 3.5rem;
+}
+
+.east,
+.oieg {
+  height: 7rem;
+}
+.marquee-content img {
+  margin: 0 2rem;
 }
 
 @media screen and (max-width: 800px) {

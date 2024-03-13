@@ -421,12 +421,12 @@
     <!-- about us -->
     <div class="about">
       <div id="about" class="text_box">
-        <p class="info">
+        <p class="about_info info">
           <span>Callan Education</span> Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Facilis fugiat fugit iusto rerum eos deleniti eius?
           Fuga vero nam explicabo.
         </p>
-        <button class="more">
+        <button class="about_more more">
           Batafsil <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -755,42 +755,188 @@
     <!-- partners -->
     <div class="partners">
       <h1 class="title">Hamkorlarimiz</h1>
-      <marquee behavior="scroll" direction="left" scrollamount="6" loop="-1">
-        <div class="logo_div">
-          <div class="partner_logo">
-            <img src="images/LSBU2020logo.png" alt="" />
-          </div>
-          <div class="partner_logo">
-            <img
-              src="images/University-of-Reading-Logo-removebg-preview.png"
-              alt=""
-            />
-          </div>
-          <div class="partner_logo">
-            <img
-              src="images/dQxFoFhnWm6TzmEg28EwAHcUM9mE5HWQ_medium-removebg-preview.png"
-              alt=""
-            />
-          </div>
-          <div class="partner_logo">
-            <img
-              src="images/university-of-east-london8981-removebg-preview.png"
-              alt=""
-            />
-          </div>
-          <div class="partner_logo">
-            <img src="images/OIEG-1-removebg-preview.png" alt="" />
-          </div>
-        </div>
-      </marquee>
+      <div class="marquee-container">
+        <marquee
+          class="marquee-content"
+          behavior="scroll"
+          direction="left"
+          scrollamount="5"
+        >
+          <!-- Your content goes here -->
+          <img class="lsbu" src="images/LSBU2020logo.png" alt="" />
+          <img
+            class="reading"
+            src="images/University-of-Reading-Logo-removebg-preview.png"
+            alt=""
+          />
+          <img
+            class="yilogo"
+            src="images/dQxFoFhnWm6TzmEg28EwAHcUM9mE5HWQ_medium-removebg-preview.png"
+            alt=""
+          />
+          <img
+            class="east"
+            src="images/university-of-east-london8981-removebg-preview.png"
+            alt=""
+          />
+          <img class="oieg" src="images/OIEG-1-removebg-preview.png" alt="" />
+          <!-- Repeat your content as needed -->
+        </marquee>
+      </div>
     </div>
     <!-- partners finished -->
 
     <!-- footer -->
     <footer>
-      <div class="informations">
-        <a href="www.callaneducation.uz">www.callaneducation.uz</a>
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+      <div class="container my-5">
+        <!-- Footer -->
+        <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #45526e"
+        >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Callan Education
+                  </h6>
+                  <p>
+                    Callan Education bilan o'z maqsadlaringizni amalga oshiring
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">batafsil</h6>
+                  <p>
+                    <a class="text-white">statistika</a>
+                  </p>
+                  <p>
+                    <a class="text-white">bizning hamkorlar</a>
+                  </p>
+                  <p>
+                    <a class="text-white">jamoaga qo'shilish</a>
+                  </p>
+                  <p>
+                    <a class="text-white">sertifikatlar</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    kerakli linklar
+                  </h6>
+                  <p>
+                    <a class="text-white">ko'p soralgan savollar</a>
+                  </p>
+                  <p>
+                    <a class="text-white">natijalar</a>
+                  </p>
+                  <p>
+                    <a class="text-white">narxlar</a>
+                  </p>
+                  <p>
+                    <a class="text-white">yordam</a>
+                  </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    bog'lanish
+                  </h6>
+                  <p><i class="fas fa-home mr-3"></i> Qo'qon, hamza, 12-uy</p>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i>
+                    callanedu@gmail.com
+                  </p>
+                  <p><i class="fas fa-phone mr-3"></i> (91) 150 00 16</p>
+                  <p><i class="fas fa-phone mr-3"></i> (97) 629 11 11</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3" />
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <!-- Copyright -->
+                  <div class="p-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/"
+                      >MDBootstrap.com</a
+                    >
+                  </div>
+                  <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <!-- Facebook -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+
+                  <!-- Twitter -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+
+                  <!-- Google -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-google"></i
+                  ></a>
+
+                  <!-- Instagram -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <!-- Grid column -->
+              </div>
+            </section>
+            <!-- Section: Copyright -->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
       </div>
+      <!-- End of .container -->
     </footer>
     <!-- footer finished -->
     <script src="js/main.js"></script>

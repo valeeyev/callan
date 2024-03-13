@@ -64,10 +64,12 @@
 .card h2 {
   font-family: var(--mainfont);
   font-size: 1.7rem;
+  color: #ffbf00;
 }
 
 p {
   font-size: 1rem;
+
   /* opacity: 0.6; */
   margin-top: 10px;
   font-family: var(--secondfont);
@@ -96,10 +98,6 @@ p {
   opacity: 0.4;
   transform: translate(-160px, 30px);
   transition: all 0.35s ease-out;
-}
-
-.card:hover .card-img {
-  /* transform: translate(70px, -15px); */
 }
 
 .card:hover .card-img img.blur {
@@ -133,11 +131,13 @@ p {
 }
 
 .btn {
+  /* pointer-events: none; */
+  width: fit-content;
   min-width: 60px;
   margin: auto 30px;
   height: 60px;
   border-radius: 20px;
-  background: #1e2235;
+  border: #1e2235 1px solid;
   border: 0px;
   outline: none;
   cursor: pointer;
@@ -145,20 +145,17 @@ p {
   z-index: 50;
   /* box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08); */
   transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btd-scroll-down {
   display: none;
 }
 
-.btn:hover {
-  box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, 0.07);
-  color: #ffbf00;
-  /* border: #ffbf00 dashed 4px; */
-}
-
 .btn i {
   font-size: 1.2rem;
-  color: #000;
+  color: #1e2235;
 }
 
 .slider {

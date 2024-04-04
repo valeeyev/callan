@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Callan Education</title>
+    <script defer src="js/main.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -52,8 +54,45 @@
     <link rel="stylesheet" href="styles/cources.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/teachers.css" />
+    <link rel="stylesheet" href="styles/pop-up.css" />
   </head>
   <body>
+    <div id="loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <div class="popup">
+      <button class="close">
+        <svg
+          xmlns="./images/ceo.jpg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+      <h3>Callan Education</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+        ipsam?
+        <span style="background-color: #ffbf00; color: #1e2235" class="p-1"
+          >30% chegirma</span
+        >
+      </p>
+      <div class="glower glower_secondary">
+        <a href="#enroll" class="enroll" style="background-color: #ffbf00"
+          >o'qishni boshlash</a
+        >
+      </div>
+    </div>
+
     <div class="navbar" id="navbar">
       <div class="btn-group fullscreen-dropdown">
         <button
@@ -436,7 +475,7 @@
           adipisicing elit. Facilis fugiat fugit iusto rerum eos deleniti eius?
           Fuga vero nam explicabo.
         </p>
-        <button class="about_more more">
+        <button id="about" class="about_more more">
           Batafsil <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -666,6 +705,9 @@
         <p class="info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
         </p>
+        <div class="illustration">
+          <img src="/images/Library-rafiki.svg" alt="" />
+        </div>
       </div>
       <div id="enroll" class="form_input">
         <div class="flex_box">
@@ -753,7 +795,9 @@
         ></textarea>
 
         <div class="send">
-          <button class="submit" type="submit" id="submit">Yuborish</button>
+          <button onclick="done();" class="submit" type="submit" id="submit">
+            Yuborish
+          </button>
           <button class="erase" type="reset" onclick="resetForm()">
             O'chirish
           </button>
@@ -953,7 +997,6 @@
       <!-- End of .container -->
     </footer>
     <!-- footer finished -->
-    <script src="js/main.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/cources.js"></script>
     <!-- <script

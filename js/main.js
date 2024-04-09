@@ -104,6 +104,6 @@ redirectButton.addEventListener("click", function () {
   window.open(aboutPageUrl, "_blank");
 });
 
-function done() {
-  alert("Ma'lumotlaringiz jo'natildi, Tez orada siz bilan bog'lanishadi");
-}
+// function done() {
+//   alert("Ma'lumotlaringiz jo'natildi, Tez orada siz bilan bog'lanishadi");
+// }

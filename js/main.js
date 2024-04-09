@@ -103,7 +103,3 @@ redirectButton.addEventListener("click", function () {
   // Open the URL in a new tab
   window.open(aboutPageUrl, "_blank");
 });
-
-// function done() {
-//   alert("Ma'lumotlaringiz jo'natildi, Tez orada siz bilan bog'lanishadi");
-// }

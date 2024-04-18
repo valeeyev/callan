@@ -419,7 +419,7 @@ body {
     margin: 6px -5px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 2440px) {
   .bdt-timeline-container {
     width: 100%;
   }
